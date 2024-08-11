@@ -7,7 +7,7 @@ int main() {
   PerfControl perf({"perf", "record"});
   foo();
   perf.enable();
-  bar();
+  bar();  // Only record this
   perf.disable();
   foo();
 }
