@@ -8,7 +8,7 @@ run: example
 	./example
 
 report: run
-	perf report | cat
+	perf report -i perf.data | cat
 
 clean:
 	rm -f example perf.data
