@@ -3,7 +3,7 @@ Control perf recording dynamically during program execution.
 
 This header-only library provides a simple interface to enable or disable perf event recording at specific points in the code, allowing for targeted performance analysis.
 
-# Usage
+## Usage
 
 ```cpp
 PerfControl pc({"perf", "record"});
@@ -12,7 +12,7 @@ pc.enable();
 pc.disable();
 ```
 
-# Example
+## Example
 
 Consider the following example:
 
