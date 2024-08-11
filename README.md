@@ -1,5 +1,7 @@
 # perf_control.hpp
-Control perf to enable or disable recording
+Control perf recording dynamically during program execution. 
+
+This header-only library provides a simple interface to enable or disable perf event recording at specific points in the code, allowing for targeted performance analysis.
 
 # Usage
 
@@ -12,7 +14,7 @@ pc.disable();
 
 # Example
 
-Take [example.cpp](example.cpp) as an example:
+Consider the following example:
 
 https://github.com/ShawnZhong/perf_control.hpp/blob/eb99420160c4b1daa72c6b175206b21fa43ed66c/example.cpp#L7-L12
 
@@ -33,4 +35,4 @@ $ perf report
     96.48%  example  example           [.] bar
 ```
 
-Note that `foo` is not recorded, while `bar` is recorded.
+The function `foo()` is not recorded by perf, while `bar()` is captured.
